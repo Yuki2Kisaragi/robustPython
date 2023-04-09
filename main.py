@@ -1,6 +1,14 @@
+import os
+import sys
 
 
-def print_hi(name):
+def greeting_path(msg, name):
+    print(sys.argv)
+    os.get_exec_path()
+    print(f"{msg}, {name}")
+
+
+def print_hi(name) -> None:
     # スクリプトをデバッグするには以下のコード行でブレークポイントを使用してください。
     print(f'Hi, {name}')  # Ctrl+F8を押すとブレークポイントを切り替えます。
 
