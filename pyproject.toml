@@ -13,3 +13,6 @@ ruff = "^0.0.261"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+select = ["I", "N"] # I:isort, N:pep8-naming
