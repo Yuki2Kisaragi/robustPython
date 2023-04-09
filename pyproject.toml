@@ -15,4 +15,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
-select = ["I", "N"] # I:isort, N:pep8-naming
+target-version = "py310"
+select = ["ALL", "D203", "D213"] # I:isort, N:pep8-naming
+line-length = 120
+ignore = ["D103", "D100", "T201", "D203", "D212", "D211"]
